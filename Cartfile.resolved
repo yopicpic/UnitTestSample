@@ -1,0 +1,4 @@
+github "antitypical/Result" "3.2.4"
+github "ishkawa/APIKit" "3.2.0"
+github "kean/Nuke" "6.0"
+github "realm/realm-cocoa" "v3.1.0"

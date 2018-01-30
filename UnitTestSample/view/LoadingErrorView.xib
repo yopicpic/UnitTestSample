@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoadingErrorView" customModule="UnitTestSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ページの読み込みに失敗しました" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3iC-g6-RBh">
+                    <rect key="frame" x="72.5" y="60" width="230" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwM-HY-gMV">
+                    <rect key="frame" x="133.5" y="118" width="108" height="30"/>
+                    <state key="normal" title="再読み込みする"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="TwM-HY-gMV" firstAttribute="top" secondItem="3iC-g6-RBh" secondAttribute="bottom" constant="40" id="Ne6-jL-l0z"/>
+                <constraint firstItem="3iC-g6-RBh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="Z50-pR-0vO"/>
+                <constraint firstItem="3iC-g6-RBh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="iwA-qN-l1p"/>
+                <constraint firstItem="TwM-HY-gMV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="r7q-AC-M6z"/>
+            </constraints>
+            <connections>
+                <outlet property="reloadButton" destination="TwM-HY-gMV" id="24l-on-cR2"/>
+            </connections>
+        </view>
+    </objects>
+</document>
